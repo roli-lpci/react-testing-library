@@ -77,9 +77,7 @@ const flushUnexpectedConsoleCalls = (
     )
 
     const message =
-      `Expected test not to call ${pc.bold(
-        `console.${methodName}()`,
-      )}.\n\n` +
+      `Expected test not to call ${pc.bold(`console.${methodName}()`)}.\n\n` +
       'If the warning is expected, test for it explicitly by:\n' +
       `1. Using the ${pc.bold('.' + expectedMatcher + '()')} ` +
       `matcher, or...\n` +
